@@ -1,0 +1,150 @@
+{
+  "schema": "solovey.contracts.source-provenance/v1",
+  "source": {
+    "repository": "MalenkiySolovey/solovey-ui",
+    "baselineCommit": "6e557aac84ac6c23cb7141c8ed4ce93d93c77bcd",
+    "baselineTree": "f413290bb889804aeb8f7ae30d7cc9219461e34b",
+    "contractCommit": "72753f9f37b134e9949a766496b658415401e0f7",
+    "procedure": "Traceable copied subtree; original repository/history untouched; per-file Git blobs and author history retained below"
+  },
+  "license": {
+    "path": "LICENSE",
+    "sha256": "3972dc9744f6499f0f9b2dbf76696f2ae7ad8af9b23dde66d6af86c9dfb36986",
+    "gitBlob": "f288702d2fa16d3cdf0035b15a9fcbc552cd88e7",
+    "policy": "Retain GPL-3.0 and source attribution; public source only",
+    "originalRepository": "MalenkiySolovey/solovey-ui",
+    "originalPath": "LICENSE",
+    "spdx": "GPL-3.0",
+    "relicensed": false
+  },
+  "upstreamManifest": {
+    "contractVersion": "solovey.management/v1",
+    "schemaSHA256": "629e9397122bb06e3534cd5753137d6acd4f51016bf96a038558bb0f5e434b8b",
+    "generatedSHA256": "90d6b8bfd66a2167b410f4044f8b1ba05653a9dd8d971d3ef24f67b3dde35aec",
+    "vectorsVersion": "solovey.management.conformance/v1",
+    "vectorsSHA256": "1e3e87c62ad4bbdd47a1c34d41b0a0be156d9c76851ecef61bf2d9fde3ab90ff",
+    "generator": {
+      "id": "solovey-schema-go/v1",
+      "sha256": "23aa4df0d97f342e616ad943f7c13e131ebe0777089386115c50a23759d6593e",
+      "gofmt": "go1.26.10"
+    },
+    "files": {
+      "README.md": "fa8bc75a9641de454dc728929fc50b42cbc639f505a85696a641e9e5ac4dedeb",
+      "codec.go": "ccad977308ce4dd48bf4792a61fa1234cc336118d0dc6b739df6da8f82cfb442",
+      "codec_test.go": "449cfa58cd884178603db8cf334e89edeca321152f28ece3c8801bee0ec96c62",
+      "schema.json": "629e9397122bb06e3534cd5753137d6acd4f51016bf96a038558bb0f5e434b8b",
+      "types.gen.go": "90d6b8bfd66a2167b410f4044f8b1ba05653a9dd8d971d3ef24f67b3dde35aec",
+      "vectors.json": "1e3e87c62ad4bbdd47a1c34d41b0a0be156d9c76851ecef61bf2d9fde3ab90ff"
+    },
+    "bundleSHA256": "4c483dfc1c1b3a2d9250c5a2b0c8b6c5a8f864f2103c91ab331733061444c922"
+  },
+  "files": [
+    {
+      "path": "contracts/management/v1/README.md",
+      "bytes": 11253,
+      "sha256": "fa8bc75a9641de454dc728929fc50b42cbc639f505a85696a641e9e5ac4dedeb",
+      "gitBlob": "b9e5d024f36707652aaded4b965e2f6bba4868ec",
+      "r6ByteIdentical": true,
+      "history": [
+        "72753f9f37b134e9949a766496b658415401e0f7 2026-10-23T00:59:35+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Prove management v1 parity through current semantic owners",
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/README.md",
+      "classification": "OWNERSHIP_DOCUMENTATION_AND_DERIVED_METADATA_ONLY"
+    },
+    {
+      "path": "contracts/management/v1/codec.go",
+      "bytes": 14299,
+      "sha256": "ccad977308ce4dd48bf4792a61fa1234cc336118d0dc6b739df6da8f82cfb442",
+      "gitBlob": "034751cc70c744d803dcd96242d79bda93807ebe",
+      "r6ByteIdentical": true,
+      "history": [
+        "72753f9f37b134e9949a766496b658415401e0f7 2026-10-23T00:59:35+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Prove management v1 parity through current semantic owners",
+        "f989ce672d72a4fddf8b5d6b7ea9d4f89a1a054a 2026-10-23T00:17:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Align foreign resource rejection with the shared permission vector",
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/codec.go",
+      "classification": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "contracts/management/v1/codec_test.go",
+      "bytes": 7751,
+      "sha256": "449cfa58cd884178603db8cf334e89edeca321152f28ece3c8801bee0ec96c62",
+      "gitBlob": "c28ba5d4382f8ba87b474fa09574ef1b1c997d52",
+      "r6ByteIdentical": true,
+      "history": [
+        "72753f9f37b134e9949a766496b658415401e0f7 2026-10-23T00:59:35+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Prove management v1 parity through current semantic owners",
+        "f989ce672d72a4fddf8b5d6b7ea9d4f89a1a054a 2026-10-23T00:17:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Align foreign resource rejection with the shared permission vector",
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/codec_test.go",
+      "classification": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "contracts/management/v1/manifest.json",
+      "bytes": 1155,
+      "sha256": "2ee07fd0dfd81ca8b3c9789895016ba951d05bdf856e8b57c511dbee23f5e98b",
+      "gitBlob": "5f9d6804a33ce504b0f36c4d4c731ac0bf3a9548",
+      "r6ByteIdentical": true,
+      "history": [
+        "72753f9f37b134e9949a766496b658415401e0f7 2026-10-23T00:59:35+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Prove management v1 parity through current semantic owners",
+        "f989ce672d72a4fddf8b5d6b7ea9d4f89a1a054a 2026-10-23T00:17:51+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Align foreign resource rejection with the shared permission vector",
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/manifest.json",
+      "classification": "OWNERSHIP_DOCUMENTATION_AND_DERIVED_METADATA_ONLY"
+    },
+    {
+      "path": "contracts/management/v1/schema.json",
+      "bytes": 32023,
+      "sha256": "629e9397122bb06e3534cd5753137d6acd4f51016bf96a038558bb0f5e434b8b",
+      "gitBlob": "bf4db89f2b4e432e0b802c49ea76e5e4f0782b49",
+      "r6ByteIdentical": true,
+      "history": [
+        "72753f9f37b134e9949a766496b658415401e0f7 2026-10-23T00:59:35+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Prove management v1 parity through current semantic owners",
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/schema.json",
+      "classification": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "contracts/management/v1/types.gen.go",
+      "bytes": 9295,
+      "sha256": "90d6b8bfd66a2167b410f4044f8b1ba05653a9dd8d971d3ef24f67b3dde35aec",
+      "gitBlob": "4fb2f9e009f7b33ae7071f8a50270f68397bb7ef",
+      "r6ByteIdentical": true,
+      "history": [
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/types.gen.go",
+      "classification": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "contracts/management/v1/vectors.json",
+      "bytes": 129120,
+      "sha256": "1e3e87c62ad4bbdd47a1c34d41b0a0be156d9c76851ecef61bf2d9fde3ab90ff",
+      "gitBlob": "3f15ebdc2969ba950395fd9921ec18c738d3e3c2",
+      "r6ByteIdentical": true,
+      "history": [
+        "72753f9f37b134e9949a766496b658415401e0f7 2026-10-23T00:59:35+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> Prove management v1 parity through current semantic owners",
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "management/v1/vectors.json",
+      "classification": "BYTE_IDENTICAL"
+    },
+    {
+      "path": "contracts/tools/generate.mjs",
+      "bytes": 4644,
+      "sha256": "23aa4df0d97f342e616ad943f7c13e131ebe0777089386115c50a23759d6593e",
+      "gitBlob": "2cc8f36f394007bf4e5f80b8807cb8c33ffe53ba",
+      "r6ByteIdentical": true,
+      "history": [
+        "91ab77e74bef7dbed184112119c8e0441b152703 2026-10-23T00:13:22+03:00 MalenkiySolovey <147066644+MalenkiySolovey@users.noreply.github.com> R6: define versioned semantic management contract and action adapters"
+      ],
+      "target": "tools/generate.mjs",
+      "classification": "BYTE_IDENTICAL"
+    }
+  ],
+  "retiredSourceAuthority": "Panel contracts/tools/pin.mjs copy writer is not imported; consumer cutovers retire it and both implementation mirrors",
+  "semanticDelta": "NONE; schema $id, codec, generated types, generator and all 115 vector bytes remain frozen"
+}

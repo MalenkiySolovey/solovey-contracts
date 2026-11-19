@@ -86,6 +86,9 @@ meaning is preserved. TARGET_HOST makes semantic scope explicit, while the
 current Panel adapter still admits Local only. It neither enables remote Host
 execution nor widens any existing permission. Future Node availability requires
 its own compatible owner/capability admission, not just a familiar ActionID.
+The component removal action belongs to the built-in lifecycle owner and does
+not require a declaring UI component. Its target still appears in the existing
+typed input and ResourceRef; no v1 command encoding or admission changes.
 
 Restore's required fence is its rehearsal revision, also present in typed input.
 Current component removal has owner lifecycle exclusion rather than an exposed

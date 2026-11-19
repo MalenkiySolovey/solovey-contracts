@@ -92,7 +92,7 @@ solovey-contracts/
 - **`ResourceRef`**: Однозначно адресует управляемую сущность в рамках хоста с помощью трёх полей:
   - `host` (`HostRef`): Хост размещения ресурса.
   - `owner` (`string`): Семантический домен-владелец ресурса (например, `data`, `component-lifecycle`).
-  - `resourceId` (`string`): Идентификатор ресурса в рамках домена (например, `database`, `component:panel-update-ui`).
+  - `resourceId` (`string`): Идентификатор ресурса в рамках домена (например, `database`, `component:telegram`).
 
 ### Действия и команды модификации
 

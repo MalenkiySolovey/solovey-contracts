@@ -6,12 +6,14 @@ import {fileURLToPath} from 'node:url'
 
 export const root = fileURLToPath(new URL('../', import.meta.url))
 const digest = value => createHash('sha256').update(value).digest('hex')
-const frozen = {
-  'schema.json': '629e9397122bb06e3534cd5753137d6acd4f51016bf96a038558bb0f5e434b8b',
+// P-N0 removes one optional catalog annotation and updates its owner test.
+// The codec, generated wire types and all accepted R6 vectors remain exact.
+const pinned = {
+  'schema.json': 'e1917595be99afa4ce55b3d853f5e8534b3d85558ee76dee63d01471bdd62633',
   'types.gen.go': '90d6b8bfd66a2167b410f4044f8b1ba05653a9dd8d971d3ef24f67b3dde35aec',
   'vectors.json': '1e3e87c62ad4bbdd47a1c34d41b0a0be156d9c76851ecef61bf2d9fde3ab90ff',
   'codec.go': 'ccad977308ce4dd48bf4792a61fa1234cc336118d0dc6b739df6da8f82cfb442',
-  'codec_test.go': '449cfa58cd884178603db8cf334e89edeca321152f28ece3c8801bee0ec96c62',
+  'codec_test.go': 'f0fcbc2ab5cfb6a212a4ce933d4b69c2f72fa67facfaf9375aeb1d28b84c77ff',
 }
 const generatorSHA256 = '23aa4df0d97f342e616ad943f7c13e131ebe0777089386115c50a23759d6593e'
 
@@ -24,14 +26,14 @@ export function verifySource(directory = root) {
   assert.equal(digest(read('LICENSE')),provenance.license.sha256,'original GPL license drift')
   const manifest = JSON.parse(read('management/v1/manifest.json'))
   assert.equal(manifest.contractVersion,'solovey.management/v1')
-  assert.deepEqual(Object.keys(manifest.files).sort(),[...Object.keys(frozen),'README.md'].sort(),'unexpected bundle file set')
+  assert.deepEqual(Object.keys(manifest.files).sort(),[...Object.keys(pinned),'README.md'].sort(),'unexpected bundle file set')
   for(const [name,hash] of Object.entries(manifest.files)) {
     assert.equal(digest(read(`management/v1/${name}`)),hash,`bundle drift: ${name}`)
-    if(frozen[name]) assert.equal(hash,frozen[name],`frozen R6 source changed: ${name}`)
+    if(pinned[name]) assert.equal(hash,pinned[name],`pinned contract source changed: ${name}`)
   }
-  assert.equal(manifest.schemaSHA256,frozen['schema.json'])
-  assert.equal(manifest.generatedSHA256,frozen['types.gen.go'])
-  assert.equal(manifest.vectorsSHA256,frozen['vectors.json'])
+  assert.equal(manifest.schemaSHA256,pinned['schema.json'])
+  assert.equal(manifest.generatedSHA256,pinned['types.gen.go'])
+  assert.equal(manifest.vectorsSHA256,pinned['vectors.json'])
   assert.equal(manifest.vectorsVersion,'solovey.management.conformance/v1')
   assert.equal(manifest.generator.id,'solovey-schema-go/v1')
   assert.equal(manifest.generator.gofmt,'go1.26.10')

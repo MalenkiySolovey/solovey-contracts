@@ -92,7 +92,7 @@ The `solovey.management/v1` contract defines closed semantic structures with fai
 - **`ResourceRef`**: Identifies a specific managed entity within a host scope via three properties:
   - `host` (`HostRef`): The host where the resource resides.
   - `owner` (`string`): The semantic domain owning the resource (e.g., `data`, `component-lifecycle`).
-  - `resourceId` (`string`): The domain-qualified identifier (e.g., `database`, `component:panel-update-ui`).
+  - `resourceId` (`string`): The domain-qualified identifier (e.g., `database`, `component:telegram`).
 
 ### Actions and Mutation Commands
 

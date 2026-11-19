@@ -28,7 +28,6 @@
       "preview": false,
       "stepUpPolicy": "existing_browser_one_use",
       "auditClass": "component_installed_changed",
-      "componentId": "panel-update-ui",
       "revisionFence": "OWNER_LIFECYCLE"
     }
   ],
